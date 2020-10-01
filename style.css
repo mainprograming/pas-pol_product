@@ -1,149 +1,328 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAS-POL</title>
-    <link rel="stylesheet" type="text/css" href="https://www.jungleocean.com/demo/jquery-slick/css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="https://www.jungleocean.com/demo/jquery-slick/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="#" class="haeder-logo">
-        <i class="fab fa-reddit"></i>
-        <div class="header-logo-name">
-          <h1>JPN-POL</h1>
-          <h2>旅のモノづくりブランド</h2>
-        </div>
-      </a>
-      <ul class="haeder-logo">
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">PRODUCT</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
-    <ul class="header-slick">
-      <li class="slick" id="slick01"></li>
-      <li class="slick" id="slick02"></li>
-      <li class="slick" id="slick03"></li>
-      <li class="slick" id="slick04"></li>
-    </ul>
-  </header>
+* {
+ list-style: none;
+ text-decoration: none;
+}
 
-  <main>
-    <div class="product" id="#product">
-      <div class="contents">
-        <div class="contents-head">
-          <h1>PRODUCT</h1>
-        </div>
-        <div class="product-contents">
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/1614c34ec664c83f668091be479f31d411.png?raw=true">
-            <h2>365日 北海道 絶景日めくりカレンダー</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/212465b615e458e672a9e0a1cbb1acf1.png?raw=true">
-            <h2>365日 北海道 絶景の旅</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/365%E6%97%A5%E6%9C%AC%E3%82%AB%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%BC_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB1.png?raw=true">
-            <h2>The World Festival Guide -海外の音楽フェス完全ガイド-</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/73af811d4a66e73bed3269430960d91c11.png?raw=true">
-            <h2>この世界で死ぬまでにしたいこと2000</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/album-thumb11.png?raw=true">
-            <h2>365日日本一周 絶景日めくりカレンダー</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/album-thumb11.png?raw=true">
-            <h2>PASSPORT NOTEBOOK series</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/banner_thumb1.png?raw=true">
-            <h2>ひとり旅英会話BOOK</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/banner_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB21.png?raw=true">
-            <h2>日本の絶景ポストカード　春編</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/denim1.png?raw=true">
-            <h2>Hawaii Album</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/passportnotebook-thumb11.png?raw=true">
-            <h2>Carry Letter　あなたと旅するレターセット</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/thumb_fes.png?raw=true">
-            <h2>ひとり旅完全ガイド</h2>
-          </a>
-          <a class="product-content" href="#">
-            <img src="https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-content/thumb_gokkaido.png?raw=true">
-            <h2>旅するiPhoneケース -Denim-</h2>
-          </a>
-        </div>
-      </div>
-      <ul class="other-page">
-        <li><a href="#" id="now-page">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">></a></li>
-      </ul>
-      <div class="back">
-        <a class="back-btn" href="#">
-          <i class="fas fa-chevron-left"></i>
-          <h1>Back To Top</h1>
-        </a>
-      </div>
-    </div>
-    <div class="sns" id="#sns">
-      <a href="#" id="facebook">Share on Facebook</a>
-      <a href="#" id="twitter">Share on Twitter</a>
-      <a href="#" id="bookmark">Hatena Bookmark</a>
-    </div>
-    <div class="main-nav">
-      <ul>
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">PRODUCT</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </div>
-    <div class="news">
-      <i id="top-scroll" class="fas fa-chevron-up"></i>
-    </div>
+header {
+ position: relative;
+}
 
-  </main>
+header a {
+  color: white;
+}
 
-  <footer>
-    <div class="footer-contents">
-      <a href="#" class="footer-left">
-        <i class="fab fa-reddit"></i>
-        <p>JPN-POL</p>
-      </a>
-    <div class="footer-right">
-      <p>Copyright © 2020 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</p>
-    </div>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+#slick01  {
+ background-size: cover;
+ width: 100%;
+ height: 300px;
+ margin: 0 auto;
+ border-radius: 0 0 500% 500% / 0 0 240px 240px;
+}
+
+#slick01 {
+ background-image: url("https://github.com/mainprograming/pas-pol_product/blob/master/photo/photo-Large/Large01.jpg?raw=true");
+}
+
+nav {
+ position: absolute;
+ top: 36px;
+ left: 7.5%;
+ display: flex;
+ width: 85%;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 10;
+}
+
+.haeder-logo {
+ display: flex;
+ align-items: center;
+}
+
+.fa-reddit {
+ display: block;
+ font-size: 72px;
+ padding-right: 20px;
+}
+
+.header-logo-name h1 {
+ font-size: 28px;
+}
+
+.header-logo-name h2 {
+ font-size: 10px;
+ padding-top: 10px;
+}
+
+.haeder-logo li {
+ padding: 0 22px;
+ font-size: 14px;
+}
+
+.haeder-logo li a {
+ position: relative;
+ display: inline-block;
+}
+
+.haeder-logo li a::after {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  background-color: white;
+}
+
+.haeder-logo li a:hover::after {
+  bottom: -10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.contents {
+ padding: 50px 0;
+ width: 70%;
+ margin: 0 auto;
+}
+
+.contents-head {
+ display: flex;
+ justify-content: space-between;
+ padding: 30px 0;
+}
+
+.contents-head h1 {
+ font-size: 28px;
+ letter-spacing: 3px;
+ margin-bottom: 30px;
+}
+
+.contents-head a {
+ border: 1px solid black;
+ padding: 15px 60px;
+ color: black;
+ position: relative;
+ font-size: 14px;
+ transition: .3s;
+}
+
+.fa-chevron-right {
+ position: absolute;
+ right: 10%;
+}
+
+.contents-head a:hover {
+ background-color: black;
+ color: white;
+}
+
+.product {
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
+.product-contents {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+
+.product-content {
+ width: 33%;
+ transition: .5s;
+ color: #000000;
+ margin-bottom: 40px;
+}
+
+.product-content:hover {
+  opacity: 0.8;
+}
+
+.product-content h2 {
+ width: 70%;
+ letter-spacing: 3px;
+ font-size: 18px;
+ line-height: 36px;
+ padding-left: 20px;
+}
+
+.product-contents img {
+ width: 240px;
+ height: 300px;
+}
+
+.news {
+  position: relative;
+}
+
+#top-scroll {
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  position: absolute;
+  right: 47%;
+  bottom: 180px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#top-scroll:hover {
+  transform: translateY(-10px);
+}
+
+.other-page {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.other-page a {
+  display: inline-block;
+  padding: 12px;
+  border: 1px solid black;
+  margin: 0 5px;
+  color: black;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.other-page a:hover {
+  background-color: #000000;
+  color: white;
+}
+
+#now-page {
+  color: gray;
+  border: 1px solid gray;
+}
+
+.back {
+  padding: 80px 0;
+}
+
+.back-btn {
+  color: #000000;
+  padding: 15px 20px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  font-size: 14px;
+  transition: .3s;
+  width: 13%;
+  margin: 0 auto;
+}
+
+.back-btn h1 {
+  padding: 0 30px;
+}
+
+.back-btn:hover ,#back-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.sns {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.sns a {
+  padding: 10px;
+  font-size: 14px;
+  margin: 15px;
+  transition: .3s;
+}
+
+#facebook {
+  border: 1px solid #0066FF;
+  color: #0066FF;
+}
+
+#twitter  {
+  border: 1px solid #88FFFF;
+  color: #88FFFF;
+}
+
+#bookmark {
+  border: 1px solid #00EE00;
+  color: #00EE00;
+}
+
+#facebook:hover {
+  background-color: #0066FF;
+  color: white;
+}
+
+#twitter:hover {
+  background-color: #88FFFF;
+  color: white;
+}
+
+#bookmark:hover {
+  background-color: #00EE00;
+  color: white;
+}
+
+.main-nav {
+  background-color: #BBBBBB;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-nav ul {
+  display: flex;
+  padding: 30px 0;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-nav a {
+  margin: 0 15px;
+  color: white;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.main-nav a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #777777;
+  padding: 30px 0;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-contents {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left p {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.footer-left:hover {
+  opacity: 0.6;
+}
+
+.footer-right p {
+  font-size: 8px;
+}
+
 
